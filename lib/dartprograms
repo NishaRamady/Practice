@@ -1,0 +1,157 @@
+void main() {
+   List<int> array=[1,2,3,4,5];
+//   printEven(6);
+  printEven(num:3);
+//     printEven(num:6,data:"");
+ 
+  }
+  
+//  void printEven(int num){
+//   void printEven({required int num,int? num2,required String data}){
+   void printEven({required int num}){
+  if (num%2 == 0){
+    print("It is  an even number");
+  }
+  else if(num>5){
+    print("number greater than 5,number is $num");
+  } 
+  
+  else{
+    print("Number is odd and number is less than $num");
+  }
+}
+-------------------------------------------
+
+void main() {
+   List<int> array=[1,2,3,4,5];
+  printEven(num:6);
+}
+
+  
+   void printEven({required int num}){
+     for(int i=0;i<=num;i++){
+       print(i);
+     }
+  
+}
+--------------------------------
+void main() {
+   List<int> array=[1,2,3,4,5,12,18,34,];
+  printEven(num:array);
+}
+
+  
+   void printEven({required List<int> num}){
+     for(int i=0;i<num.length;i++){
+       if(num[i]%2 == 0){
+         print("even numbers ${num[i]}");
+       }
+     }
+  
+}
+--------------------------------------- 
+
+void main() {
+   List<int> array=[1,2,3,4,5,12,18,34,];
+  printEven(array);
+}
+
+  
+   void printEven( List<int>  array){
+     for(int i=0;i<array.length;i++){
+       if(array[i]%2 == 0){
+         print("even numbers ${array[i]}");
+       }
+     }
+  
+}
+----------------
+void main(){
+var firstName = "John";
+var lastName = "George";
+  print("firstName is $firstName,lastname is $lastName");
+ }
+-----------------------------------
+void main(){
+  int num1 =10;
+  int num2 = 5;
+  int sum = num1 + num2;
+  int diff = num1 - num2;
+  int mult = num1 * num2;
+  double div = num1 / num2;
+  print("The sum is $sum");
+  print("The diff is $diff");
+  print("The pro is $mult");
+  print("The quo is $div");
+  }
+  -------------------------------------
+ ....... List.........
+  void main(){
+  var list =[1,2,3];
+  assert(list.length == 3);
+  assert(list[1] ==2);
+  list[1] =1;
+  assert(list[1] ==1) ;
+//   var list = ['car','boat','plane'];
+  var constantList =const[1,2,3];
+   
+  }
+  ----------------------------------------
+  --------Set--------------
+  void main(){
+  var halogens = {'fluorine','iodine','bromine','astatine','chlorine'};
+  var names =<String>{};
+//   Set<String> names = {};
+  var elements =<String>{};
+  elements.add("fluorine");
+  elements.addAll(halogens);
+  assert(elements.length == 5);
+  final constantSet = const{"Fluorine","Chlorine","Bromine","Iodine","Astatine"};
+}
+------------------------------------------------
+----------Map---------------
+void main(){
+  var gifts ={
+    
+    'first' : "ring",
+    'second' : "chain",
+    'fifth'  :"bangles"
+    
+  };
+  
+  var nobleGases ={
+    2 :'helium',
+    10 : 'neon',
+    18 :'argon'
+    
+  };
+  
+  var gifts = Map<String ,String>();
+  gifts['first'] ="ring";
+  gifts["second"] ="chain";
+  gifts["fifth"] ="bangles";
+  
+  
+
+var nobleGases = Map<int, String>();
+nobleGases[2] = 'helium';
+nobleGases[10] = 'neon';
+nobleGases[18] = 'argon';
+  
+
+}
+---------------------------------------------
+void main(){
+  String a = 'n';
+  print(a);
+}
+
+...........
+
+void main(){
+   int  num1 = 5;
+   double num2 =7;
+   double sum = num1+ num2;
+  print(sum);
+  }
+  ..............
