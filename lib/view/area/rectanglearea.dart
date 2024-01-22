@@ -40,7 +40,9 @@ class _RectangleAreaState extends State<RectangleArea> {
               const SizedBox(
                 height: 12,
               ),
-              const Text("Enter the length",
+
+              ///
+                  const Text("Enter the length",
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
@@ -48,7 +50,7 @@ class _RectangleAreaState extends State<RectangleArea> {
               const SizedBox(height: 12),
               TextField(
                 style: const TextStyle(color: Colors.white),
-                 keyboardType: TextInputType.number,
+                 keyboardType: TextInputType.number,  
                 inputFormatters: [intFormatter],
                 controller: num1Controller,
                 decoration: InputDecoration(
